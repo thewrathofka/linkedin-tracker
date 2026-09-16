@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "linkedin-tracker",
+  "description": "Standalone, per-BDR LinkedIn connection-request + cold-call lead tracker. Fully self-contained: ships its own read-only LinkedIn MCP and permission deny-list, keeps its own Notion tracking page and databases, and does not depend on the Conversation Hub / convohub-sync plugins. One install works for any BDR against their own LinkedIn login and Notion identity.",
+  "owner": { "name": "Superside BDR Team" },
+  "plugins": [
+    {
+      "name": "linkedin-tracker",
+      "description": "/linkedin-tracker — reconciles the BDR's LinkedIn inbox (accepted/replied) against their own Notion tracking page, @-mentions them to send a same-day first message on new connections, and on send runs builds a lead list from their downloaded Salesforce reports and sends connection requests via Claude in Chrome (never via the MCP). Reads via a bundled read-only LinkedIn MCP; the connect action and all search actions are blocked by a bundled deny-list.",
+      "author": { "name": "Superside BDR Team" },
+      "category": "sales",
+      "source": "./plugins/linkedin-tracker"
+    }
+  ]
+}

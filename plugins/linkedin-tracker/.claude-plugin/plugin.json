@@ -1,0 +1,9 @@
+{
+  "name": "linkedin-tracker",
+  "version": "0.1.0",
+  "description": "Standalone, per-BDR LinkedIn connection-request + cold-call lead tracker. Reconciles the BDR's own LinkedIn inbox against a per-BDR Notion tracking page, @-mentions them to send a same-day first message when someone connects, and on send runs builds a lead list from their downloaded Salesforce reports and sends connection requests via Claude in Chrome (never via the MCP). Self-contained: bundles its own read-only LinkedIn MCP and permission deny-list; independent of the Conversation Hub / convohub-sync plugins. Works for every rep on their own LinkedIn login and Notion identity, resolved per run.",
+  "author": {
+    "name": "Katarina Misovic"
+  },
+  "keywords": ["linkedin", "notion", "salesforce", "lead tracker", "connection requests", "sales", "bdr"]
+}
